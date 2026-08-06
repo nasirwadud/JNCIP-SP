@@ -24,6 +24,12 @@ https://www.juniper.net/gb/en/training/certification/tracks/service-provider-rou
 
 The screenshots below provide practical OSPFv2 evidence for the objectives demonstrated in this lab. OSPFv3 is covered separately as theory and is not claimed as practical evidence.
 
+## Topology
+
+![OSPF multi-area topology](Topology/00-ospf-multi-area-topology.png)
+
+[View the authoritative lab design](Design/README.md)
+
 ## Practical Evidence Captured
 
 The screenshots in this repository directly demonstrate:
@@ -36,6 +42,9 @@ The screenshots in this repository directly demonstrate:
 - LSA types 1, 2, 3, 4, 5, and 7
 - SPF path selection and metric changes
 - Equal-cost multipath routing and restoration
+- Parallel-link redundancy in Areas 1 and 2
+- Controlled primary and secondary link failure testing
+- Backup-path reachability and path restoration
 - OSPF external E1 and E2 routes
 - Area route summarisation
 - Route-summary restriction and restoration
@@ -53,6 +62,7 @@ Controlled failures were introduced, diagnosed, corrected, and verified for:
 - Hello and dead timer mismatch
 - Authentication mismatch
 - MTU mismatch
+- Parallel-link failure, backup-path convergence, and restoration
 
 Each troubleshooting sequence includes failure evidence, diagnostic evidence, and restored adjacency evidence.
 
@@ -89,6 +99,6 @@ Each lab follows an accuracy-first engineering workflow:
 
 ## Status
 
-The OSPFv2 practical evidence-capture phase is complete.
+The OSPFv2 practical lab and evidence-capture phase is complete.
 
-The repository currently contains 38 screenshots covering configuration, verification, routing-policy behaviour, troubleshooting, and restoration.
+The repository contains 46 evidence screenshots, one annotated topology diagram, and an authoritative design document covering configuration, verification, routing-policy behaviour, redundancy, troubleshooting, and restoration.
