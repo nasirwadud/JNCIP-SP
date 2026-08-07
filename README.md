@@ -13,9 +13,9 @@ This repository focuses on configuration, monitoring, controlled failures, troub
 | BGP | Planned | Advanced BGP and routing-policy labs |
 | Class of Service | Planned | Classification, policing, scheduling, and rewrite rules |
 | IP Multicast | Planned | IGMP, PIM, RPF, RP, ASM, and SSM |
+| MPLS Foundations | Planned | Supporting MPLS and label-forwarding labs |
 | Layer 3 VPNs | Planned | MPLS L3VPN control plane and forwarding |
 | Layer 2 VPNs | Planned | L2 circuits, BGP L2VPN, VPLS, and EVPN |
-| MPLS Foundations | Planned | Supporting MPLS and label-forwarding labs |
 | Automation | Planned | Linux, Python, Ansible, NETCONF, and Junos automation |
 
 ## JN0-664 Alignment
