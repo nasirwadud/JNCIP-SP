@@ -9,7 +9,7 @@ This repository focuses on configuration, monitoring, controlled failures, troub
 | Technology | Status | Documentation |
 |---|---|---|
 | OSPF | Complete | [View OSPF lab](OSPF/README.md) |
-| IS-IS | Lab in progress | Evidence will be published after final validation |
+| IS-IS | Complete | [View IS-IS lab](IS-IS/README.md) |
 | BGP | Planned | Advanced BGP and routing-policy labs |
 | Class of Service | Planned | Classification, policing, scheduling, and rewrite rules |
 | IP Multicast | Planned | IGMP, PIM, RPF, RP, ASM, and SSM |
