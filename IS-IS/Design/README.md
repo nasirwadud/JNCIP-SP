@@ -15,7 +15,7 @@ This document records the source of truth used for the six-router IPv4 IS-IS fin
 | R3 | 3.3.3.3/32 | Level 2 | 49.0002 |
 | R4 | 4.4.4.4/32 | Level 2 | 49.0002 |
 | R5 | 5.5.5.5/32 | Level 1/Level 2 boundary router | 49.0002 |
-| R6 | 6.6.6.6/32 | Level 1 | 49.0003 |
+| R6 | 6.6.6.6/32 | Level 1 | 49.0002 |
 
 ## Interface and Addressing Plan
 
