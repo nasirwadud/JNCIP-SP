@@ -51,6 +51,15 @@ This document records the source of truth used for the six-router IPv4 IS-IS fin
 - R2 originates aggregate `172.16.0.0/22` into Level 2 and suppresses the contributing Level 1 specifics.
 - R5 selectively leaks `3.3.3.3/32` from Level 2 into Level 1.
 
+## Design Validation
+
+- R1 and R2 share area `49.0001`, allowing their Level 1 adjacency.
+- R5 and R6 share area `49.0002`, allowing their Level 1 adjacency.
+- The Level 2 backbone links can form between routers regardless of their area identifiers.
+- Every point-to-point connection uses a unique `/24` IPv4 subnet.
+- The two R2-R3 links and two R4-R5 links provide independent equal-cost paths.
+- R2 and R5 provide the Level 1-to-Level 2 boundary function for their attached Level 1 routers.
+
 ## Controlled Tests
 
 1. Verify all Level 1 and Level 2 adjacencies.
