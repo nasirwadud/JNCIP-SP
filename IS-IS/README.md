@@ -62,8 +62,11 @@ Controlled failures were introduced, diagnosed, corrected, and verified for:
 - Withdrawal of the R1 Level 1 default route during backbone isolation
 - Expected end-to-end reachability failure during total isolation
 - Reactivation of both links and restoration of adjacency, routing, and connectivity
+- A real duplicate-vMX-MAC fault where adjacency remained Up but the Level 1 LSDB failed to synchronize
 
 Each troubleshooting sequence preserves the configuration change, observed symptom, forwarding result, corrective action, and restored state.
+
+- [View the duplicate vMX MAC troubleshooting case](Troubleshooting/duplicate-vmx-mac/README.md)
 
 ## Packet Analysis Evidence
 
@@ -92,6 +95,7 @@ IS-IS/
 - [Configuration evidence](Configurations/)
 - [Verification and Wireshark evidence](Verification/)
 - [Troubleshooting and restoration evidence](Troubleshooting/)
+- [Duplicate vMX MAC troubleshooting case](Troubleshooting/duplicate-vmx-mac/README.md)
 - [Authoritative design](Design/README.md)
 - [Annotated topology](Topology/00-isis-multilevel-final-lab-topology.png)
 
@@ -103,6 +107,7 @@ IS-IS/
 - One parallel-link failure preserved end-to-end reachability.
 - Failure of both R2-R3 links withdrew R1's interarea exit and caused the expected reachability failure.
 - Restoration returned the adjacencies, default route, ECMP, and sourced-ping success.
+- A duplicate vMX interface MAC was isolated using hostname, LSDB, interface, RIB, and reachability evidence; a unique R2 MAC restored synchronization and forwarding.
 - R5 selectively leaked `3.3.3.3/32` from Level 2 into Level 1 with the down bit visible.
 - R2 advertised `172.16.0.0/22` into Level 2 while suppressing the Level 1 specifics.
 - R5 won the Level 1 DIS election after its priority was raised to 100.
@@ -124,7 +129,7 @@ The lab follows an accuracy-first engineering workflow:
 
 The IPv4 IS-IS practical lab and evidence-capture phase is complete.
 
-The repository contains 44 numbered evidence screenshots, one annotated topology diagram, and an authoritative design document covering configuration, verification, routing policy, packet analysis, redundancy, troubleshooting, and restoration.
+The repository contains the original 44 numbered evidence screenshots, one annotated topology diagram, an authoritative design document, and an additional eight-image real-fault troubleshooting case.
 
 ## Disclaimer
 
